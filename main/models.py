@@ -19,13 +19,24 @@ class Contact(models.Model):
         abstract = True
         
 class Acount(Contact):
-    pass
+    
+    class Meta:
+        verbose_name = "Cuenta"
 
 class Customer(Contact):
-    pass
+    rfc = models.CharField("RFC", max_lenght=13, blank=True)
+    
+    class Meta:
+        verbose_name = "Cliente"
 
 class Quotation(models.Model):
-    pass
+    customer = models.ForeignKey('Contact')
+    
+    class Meta:
+        verbose_name = "Cotización"
 
 class Invoice(models.Model):
-    pass
+    customer = models.ForeignKey('Customer')
+    
+    class Meta:
+        verbose_name = "Factura"
