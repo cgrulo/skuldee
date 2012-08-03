@@ -23,10 +23,7 @@ DATABASES = {
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
-# On Unix systems, a value of None will cause Django to use the same
-# timezone as the operating system.
-# If running in a Windows environment this must be set to the same as your
-# system time zone.
+# In a Windows environment this must be set to your system time zone.
 TIME_ZONE = 'America/Chicago'
 
 # Language code for this installation. All choices can be found here:
@@ -81,7 +78,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'hr5s=vdz&amp;xsny#$d$whva0z)d*gx^#wtw8@egx1-k!(ixy4^(w'
+SECRET_KEY = 'f3_#a2p*m_5=hh8@h=p-ru@z%g5-v$00r*i+i2*@+b@o%h)usz'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
